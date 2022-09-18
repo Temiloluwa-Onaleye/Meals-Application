@@ -1,4 +1,4 @@
-const Favourites = () => {
+const Favorites = () => {
 
   return(
 
@@ -10,4 +10,4 @@ const Favourites = () => {
   
 }
 
-export default Favourites;
+export default Favorites;
