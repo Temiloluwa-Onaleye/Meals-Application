@@ -7,6 +7,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     console.log('fetch data here')
+    // fetch data
   }, [])
 
   return <AppContext.Provider value={{ name: 'temiloluwa', role: 'student' }}>
