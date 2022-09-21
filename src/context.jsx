@@ -15,7 +15,7 @@ const AppProvider = ({ children }) => {
         console.log(error)
       }
     }
-    fetchData()
+    
   }, [])
 
   return <AppContext.Provider value={{ name: 'temiloluwa', role: 'student' }}>
