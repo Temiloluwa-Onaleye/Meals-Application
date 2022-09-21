@@ -13,8 +13,8 @@ const AppProvider = ({ children }) => {
       const response = await fetch('https://randomuser.me/api/')
       const data = await response.json();
       console.log(data)
-    } catch (error) {
-      console.log(error)
+    } catch (err) {
+      console.log(err)
     }
   }
 
