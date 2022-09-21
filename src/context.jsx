@@ -6,8 +6,13 @@ const AppContext = React.createContext()
 const AppProvider = ({ children }) => {
 
   useEffect(() => {
-    console.log('fetch data here')
-    // fetch data
+   const fetchData = async () => {
+     try {
+       const
+     } catch(error) {
+       
+     }
+   }
   }, [])
 
   return <AppContext.Provider value={{ name: 'temiloluwa', role: 'student' }}>
