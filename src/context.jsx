@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
    const fetchData = async () => {
      try {
-       const
+       
      } catch(error) {
        
      }
