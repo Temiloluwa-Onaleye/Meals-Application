@@ -8,6 +8,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AppProvider>
       <App />
     </AppProvider>
-
   </React.StrictMode>
 )
