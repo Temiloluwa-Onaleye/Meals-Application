@@ -6,7 +6,7 @@ const Meals = () => {
 
 
   return (
-    <section className="section-center">
+    <div className="section-center">
       {
         meals.map((meal) => {
           const { idMeal, strMeal: title, strMealThumb: image } = meal
@@ -23,7 +23,7 @@ const Meals = () => {
 
 
       }
-    </section>
+    </div>
   )
 
 
