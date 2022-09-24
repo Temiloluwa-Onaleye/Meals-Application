@@ -5,9 +5,14 @@ const Meals = () => {
 
   const { meals, loading } = useGlobalContext();
 
-
+  {
+    loading === true ? <section className='section'>
+      <h4>Loading...</h4>
+    </section> : false
+  }
   return (
     <section className="section-center">
+      {loading}
       {
         meals.map((meal) => {
           const { idMeal, strMeal: title, strMealThumb: image } = meal
