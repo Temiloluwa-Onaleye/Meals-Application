@@ -14,6 +14,14 @@ const Meals = () => {
 
   }
 
+  if (meals.length < 1) {
+    return (
+      <section className='section'>
+        <h4>No meals matched your serach item, please try again</h4>
+      </section>
+    )
+  }
+
   return (
     <section className="section-center">{
       meals.map((meal) => {
