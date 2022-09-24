@@ -3,7 +3,7 @@ import { BiLike } from 'react-icons/bi'
 
 const Meals = () => {
 
-  const { meals } = useGlobalContext();
+  const { meals, loading } = useGlobalContext();
 
 
   return (
