@@ -10,15 +10,16 @@ const randomMealUrl = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
 
 const AppProvider = ({ children }) => {
-  const [meals, setMeals] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [meals, setMeals] = useState([]);
+
 
   const fetchMeals = async (url) => {
-     setLoading(true)
+    setLoading(true)
     try {
       const { data } = await axios.get(url)
       setMeals(data.meals)
-     
+
 
 
     } catch (e) {
