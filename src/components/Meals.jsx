@@ -12,7 +12,7 @@ const Meals = () => {
           const { idMeal, strMeal: title, strMealThumb: image } = meal
           return (
             <article className="single-meal" key={idMeal} id={idMeal}>
-              <img src={image} style={{ width: '200px' }} alt="image" className="img" />
+              <img src={image} alt="image" className="img" />
               <footer>
                 <h5>{title}</h5>
                 <button className='like-btn'>Click me!</button>
