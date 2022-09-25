@@ -10,7 +10,7 @@ export default function App() {
       <Search />
       {/*<Favorites />*/}
       <Meals />
-      {/*<Modal />*/}
+      <Modal />
 
     </main>
   )
