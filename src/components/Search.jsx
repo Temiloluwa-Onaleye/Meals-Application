@@ -23,6 +23,8 @@ const Search = () => {
 
   const handleFetchRandomMeal = (e) => {
     e.preventDefault();
+    setSearchTerm('')
+    setText("")
     fetchRandomMeal()
   }
 
