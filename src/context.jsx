@@ -40,7 +40,12 @@ const AppProvider = ({ children }) => {
     fetchMeals(`${allMealsUrl}${searchTerm}`)
   }, [searchTerm])
 
-  return <AppContext.Provider value={{ meals, loading, setSearchTerm }}>
+const fetchRandomMeal = () => {
+  fetchMeals(randomMealUrl)
+}
+  
+
+  return <AppContext.Provider value={{ meals, loading, setSearchTerm, fetchRandomMeal}}>
     {children}
   </AppContext.Provider>
 
