@@ -4,6 +4,7 @@ import { useGlobalContext } from '../context'
 
 const Search = () => {
   const [text, setText] = useState('')
+  const {setSearchTerm} = useGlobalContext();
 
   const handleChange = (e) => {
     e.preventDefault()
@@ -13,6 +14,11 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if(text) {
+      setSearchTerm(text)
+      setText('')
+    }
+    
   }
 
   return (
