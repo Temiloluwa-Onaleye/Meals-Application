@@ -1,7 +1,7 @@
 import { useGlobalContext } from '../context';
 
 const Modal = () => {
-  // const {showModal} = useGlobalContext();
+  const {showModal} = useGlobalContext();
   return (
 
     <aside className="modal-overlay">

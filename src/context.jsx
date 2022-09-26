@@ -51,9 +51,8 @@ const AppProvider = ({ children }) => {
     fetchMeals(randomMealUrl)
   }
 
-  const selectMeal = (idMeal, favouriteMeal) = {
-  
-    let meal;
+  const selectMeal = (idMeal, favoriteMeal) => {
+  let meal;
     meal = meals.find( (meal) => meal.idMeal === idMeal)
     setSelectedMeal(meal)
     setShowModal(true)
