@@ -3,7 +3,7 @@ import { BiLike } from 'react-icons/bi'
 
 const Meals = () => {
 
-  const { meals, loading } = useGlobalContext();
+  const { meals, loading, selectMeal } = useGlobalContext();
 
 
   if (loading) {
@@ -28,7 +28,7 @@ const Meals = () => {
         const { idMeal, strMeal: title, strMealThumb: image } = meal
         return (
           <article className="single-meal" key={idMeal} id={idMeal}>
-            <img src={image} alt="image" className="img" />
+            <img src={image} alt="image" className="img" onClick={selectMeal(idMeal)} />
             <footer>
               <h5>{title}</h5>
               <button className='like-btn'>
