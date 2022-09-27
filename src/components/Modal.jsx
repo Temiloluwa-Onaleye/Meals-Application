@@ -3,7 +3,7 @@ import { useGlobalContext } from '../context';
 const Modal = () => {
   const { selectedMeal, closeModal } = useGlobalContext();
 
-  const { strMealThumb: image, strMeal: title, strInstructions: text, strSource: source } = selectedMealedMeal
+  const { strMealThumb: image, strMeal: title, strInstructions: text, strSource: source } = selectedMeal
 
   return (
 
