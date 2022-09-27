@@ -80,7 +80,7 @@ const AppProvider = ({ children }) => {
   }
 
 
-  return <AppContext.Provider value={{ meals, loading, setSearchTerm, fetchRandomMeal, showModal, selectMeal, selectedMeal, closeModal }}>
+  return <AppContext.Provider value={{ meals, loading, setSearchTerm, fetchRandomMeal, showModal, selectMeal, selectedMeal, closeModal, addToFavorites, removeFromFavorites }}>
     {children}
   </AppContext.Provider>
 
