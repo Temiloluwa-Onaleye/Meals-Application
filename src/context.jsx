@@ -65,6 +65,21 @@ const AppProvider = ({ children }) => {
   }
 
 
+  const addToFavorites = (idMeal) => {
+    const meal = meals.find((meal) => meal.idMeal === idMeal)
+    const alreadyFavorite = favorites.find((meal) => meal.idMeal === idMeal)
+    if (alreadyFavorite) return
+    const updatedFavorites = [...favorites, meal]
+
+    setFavorites(updatedFavorites)
+  }
+
+  const removeFromFavorites = (idMeal) => {
+    const updatedFavorites = favorites.filter((meal) => meal.idMeal !== idMeal)
+    setFavorites(updatedFavorites)
+  }
+
+
   return <AppContext.Provider value={{ meals, loading, setSearchTerm, fetchRandomMeal, showModal, selectMeal, selectedMeal, closeModal }}>
     {children}
   </AppContext.Provider>
