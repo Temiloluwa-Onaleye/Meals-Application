@@ -52,15 +52,19 @@ const AppProvider = ({ children }) => {
   }
 
   const selectMeal = (idMeal, favoriteMeal) => {
-  let meal;
+    let meal;
     meal = meals.find((meal) => meal.idMeal === idMeal)
     setSelectedMeal(meal)
     setShowModal(true)
-    
+
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
   }
 
 
-  return <AppContext.Provider value={{ meals, loading, setSearchTerm, fetchRandomMeal, showModal,selectMeal, selectedMeal }}>
+  return <AppContext.Provider value={{ meals, loading, setSearchTerm, fetchRandomMeal, showModal, selectMeal, selectedMeal, closeModal }}>
     {children}
   </AppContext.Provider>
 
